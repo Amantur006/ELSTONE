@@ -1,0 +1,664 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.elstone-p:link,
+.elstone-p:visited {
+  font-family: "Didact Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.24em;
+  text-decoration: none;
+  color: #666;
+}
+
+.elstone-p:hover,
+.elstone-p:active {
+  color: #000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #666666;
+  text-decoration: none;
+  z-index: 1000000000;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.main-link:link,
+.main-link:visited {
+  color: #000;
+  border-bottom: #000000 1px solid;
+}
+
+.main-link:hover,
+.main-link:active {
+  border-color: transparent;
+}
+
+/* HEADER */
+
+.header {
+  height: 70rem;
+  max-width: 100%;
+  background-image: url(../img/камень\ главный\ экран.jpg);
+  position: relative;
+}
+
+.header-text-container {
+  max-width: 73rem;
+  position: absolute;
+  transform: translate(20%, 40%);
+}
+
+.header-h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 9.4rem;
+  color: #ffffff;
+}
+
+.header-p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: #ffffff;
+}
+
+/* ABOUT US */
+
+.about-us {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  /* padding-left: 14rem; */
+  position: relative;
+}
+
+.about-us-container {
+  max-width: 109rem;
+  margin: 0 auto;
+}
+
+.about-us-h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 4rem;
+  color: #000000;
+}
+
+.about-us-image {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  z-index: -10;
+}
+
+.about-us-p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #222222;
+}
+
+/* ECO RICH */
+
+.eco-rich {
+  height: 70rem;
+  max-width: 100%;
+  background-image: url(../img/природные\ богатства.jpg);
+  display: grid;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.eco-container {
+  max-width: 118rem;
+}
+
+.eco-h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.eco-p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* OUR PRODACTION */
+
+.our-product {
+  max-width: 100%;
+  padding: 16rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item {
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.our-product-h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.7rem;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 12rem;
+}
+
+.our-product-container {
+  margin: auto;
+  width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.product-item-5 {
+  grid-column: 2/4;
+}
+
+.product-name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #000000;
+}
+
+.product-info {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #000000;
+}
+
+.product-item {
+  transition: all 0.2s;
+}
+
+.product-item:hover {
+  cursor: pointer;
+  transform: translateY(-2rem);
+}
+
+/* TECHNOLOGY */
+
+.our-technology {
+  max-width: 100%;
+  height: 99.2rem;
+  padding: 16rem 0;
+  background-image: url(../img/аппаратура.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.technology-text {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.technology-h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7.6rem;
+  color: #ffffff;
+}
+
+.technology-p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.technology-image-1 {
+  position: absolute;
+  top: 80%;
+  left: 49%;
+  transform: translate(-100%, 0);
+  max-width: 30%;
+}
+
+.technology-image-2 {
+  position: absolute;
+  top: 80%;
+  left: 51%;
+  max-width: 30%;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 16rem;
+  background-color: #222;
+  padding-bottom: 14rem;
+  position: relative;
+
+  margin-top: 30rem;
+}
+
+.footer-line {
+  max-width: 100%;
+  border-bottom: 0.3rem solid #fff;
+  margin: 1rem 0;
+}
+
+.footer-underline {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  padding: 0 0.2rem;
+  background-color: #fff;
+}
+
+.footer-top {
+  max-width: 100rem;
+  height: 8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top-1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+.footer-top-2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+.footer-bottom {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-1 {
+  max-width: 45rem;
+}
+
+.footer-bottom-1-p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #ffffff;
+  margin-bottom: 5rem;
+}
+
+.footer-bottom-2-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 41rem;
+}
+
+.footer-bottom-2-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+}
+
+.footer-bottom-2-p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: #ffffff;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  font-size: 4rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+}
+
+.close {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.footer-top,
+.footer-bottom {
+  padding: 0 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+
+  .technology-text {
+    max-width: 90rem;
+  }
+
+  .our-product-container {
+    width: 94rem;
+  }
+
+  .product-item img {
+    height: 30rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    z-index: 100;
+    background-color: #fff;
+    position: fixed;
+    top: 3rem;
+    right: -5rem;
+    padding: 3rem;
+  }
+
+  .modal {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    color: #000;
+  }
+
+  .close {
+    font-size: 3rem;
+    position: fixed;
+    right: -5rem;
+    top: 3rem;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.8s;
+  }
+
+  #a {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: -10;
+  }
+
+  #a:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100000;
+    right: 3rem;
+  }
+
+  #a:target .close {
+    right: 3rem;
+  }
+
+  .navigation {
+    display: grid;
+    justify-content: start;
+  }
+
+  .nav-icon {
+    margin-left: 3rem;
+  }
+
+  .about-us-container img {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+
+  .our-product-container {
+    width: 88rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 4rem;
+  }
+
+  .product-item-5 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+
+  .product-item {
+    width: 100%;
+  }
+
+  .product-item img {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .product-item-5 img {
+    width: 88rem;
+  }
+
+  .technology-text {
+    max-width: 80rem;
+  }
+
+  .technology-image-1 {
+    position: absolute;
+    top: 90%;
+    left: 49%;
+    transform: translate(-100%, 0);
+    max-width: 40%;
+  }
+
+  .technology-image-2 {
+    position: absolute;
+    top: 90%;
+    left: 51%;
+    max-width: 40%;
+  }
+
+  .footer-top {
+    margin-top: 30rem;
+    padding: 0 3rem;
+  }
+
+  .footer-bottom {
+    padding: 0 3rem;
+  }
+
+  .footer-bottom-1-p {
+    max-width: 90%;
+  }
+
+  .footer-bottom-2-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .about-us-p {
+    font-size: 2.4rem;
+    color: #000;
+    max-width: 80rem;
+  }
+
+  .about-us-container {
+    margin-left: 2rem;
+  }
+
+  .header-text-container {
+    max-width: 55rem;
+    position: absolute;
+    transform: translate(20%, 40%);
+  }
+
+  .about-us-container img {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .about-us-container img {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .our-product-container {
+    width: 50rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .product-item-5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .product-item {
+    width: 100%;
+    grid-column: 1/2;
+    padding: 0 1rem;
+  }
+
+  .product-item img {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .product-item-5 img {
+    width: 88rem;
+  }
+
+  .header-text-container {
+    max-width: 40rem;
+  }
+
+  .technology-text {
+    max-width: 45rem;
+    margin-left: 2rem;
+  }
+
+  .technology-h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .technology-p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  html {
+    font-size: 40%;
+  }
+
+  .header-h1 {
+    line-height: 5rem;
+    font-size: 4rem;
+  }
+
+  .header-p {
+    font-size: 3rem;
+  }
+
+  .footer-bottom-2-p {
+    font-size: 1.5rem;
+  }
+
+  .our-product-container {
+    width: 37rem;
+  }
+
+  .about-us-container img {
+    height: 25rem;
+    width: 25rem;
+  }
+}
